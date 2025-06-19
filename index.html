@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Math_The_Dev - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Import Google Font pour un look rétro / geek -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background: linear-gradient(45deg, #000, #101010, #202020);
+      background-size: 400% 400%;
+      animation: gradientAnim 20s ease infinite;
+      color: #00ffcc;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    @keyframes gradientAnim {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    header { margin-bottom: 40px; }
+    
+    header h1 {
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #00ffcc;
+      margin-bottom: 10px;
+    }
+    
+    header p {
+      font-size: 0.9rem;
+      color: #ff66cc;
+    }
+    
+    nav { margin-bottom: 30px; }
+    
+    nav a {
+      color: #00ffcc;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 0.8rem;
+      transition: color 0.3s, transform 0.3s;
+    }
+    
+    nav a:hover {
+      color: #ff66cc;
+      transform: scale(1.1);
+    }
+    
+    .container {
+      width: 90%;
+      max-width: 800px;
+    }
+    
+    section {
+      margin: 40px 0;
+      padding: 20px;
+      border: 2px solid #00ffcc;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+    
+    section h2 {
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      text-shadow: 0 0 8px #00ffcc;
+    }
+    
+    .links a {
+      display: inline-block;
+      margin: 10px 15px;
+      padding: 12px 25px;
+      border: 2px solid #00ffcc;
+      border-radius: 8px;
+      color: #00ffcc;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      transition: background 0.3s, transform 0.3s;
+    }
+    
+    .links a:hover {
+      background: #00ffcc;
+      color: #000;
+      transform: scale(1.05);
+    }
+    
+    /* Formulaire de contact */
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    form input,
+    form textarea {
+      width: 90%;
+      max-width: 400px;
+      padding: 10px;
+      margin: 10px 0;
+      border: 2px solid #00ffcc;
+      border-radius: 5px;
+      background: transparent;
+      color: #00ffcc;
+      font-family: inherit;
+    }
+
+    form button {
+      padding: 10px 20px;
+      border: 2px solid #00ffcc;
+      border-radius: 5px;
+      background: #00ffcc;
+      color: #000;
+      font-family: inherit;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    form button:hover {
+      transform: scale(1.05);
+    }
+    
+    footer {
+      margin-top: 40px;
+      font-size: 0.6rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Math_The_Dev</h1>
+    <p>Portfolio & Projets Ultra Stylés</p>
+  </header>
+  
+  <nav>
+    <a href="#about">À Propos</a>
+    <a href="#projects">Projets</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  
+  <div class="container">
+    <!-- Section À Propos -->
+    <section id="about">
+      <h2>À Propos</h2>
+      <p>Salut ! Je suis Math_The_Dev, passionné de développement, de jeux et de créations numériques. Ici, tu trouveras mes projets, mes expérimentations et bien plus.</p>
+    </section>
+    
+    <!-- Section Liens vers tes plateformes -->
+    <section id="projects">
+      <h2>Mes Liens</h2>
+      <div class="links">
+        <a href="https://www.guilded.gg/u/Math-3397" target="_blank">Guilded</a>
+        <a href="https://scratch.mit.edu/users/Math_The_Dev/" target="_blank">Scratch</a>
+        <a href="https://math-the-dev.itch.io/" target="_blank">Itch.io</a>
+      </div>
+    </section>
+    
+    <!-- Section Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Pour toute collaboration ou juste papoter, contacte-moi à :</p>
+      <p><a href="mailto:tonemail@exemple.com" style="color:#ff66cc;">tonemail@exemple.com</a></p>
+      <!-- Optionnel : formulaire de contact
+      <form action="https://formspree.io/f/tonIDici" method="POST">
+        <input type="text" name="name" placeholder="Ton nom" required>
+        <input type="email" name="email" placeholder="Ton email" required>
+        <textarea name="message" placeholder="Ton message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+      -->
+    </section>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 Math_The_Dev - Tous droits réservés</p>
+  </footer>
+</body>
+</html>
